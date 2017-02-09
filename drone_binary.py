@@ -22,7 +22,7 @@ def decode_float(s):
   
 
 
-# configure the serial connections (the parameters differs on the device you are connecting to)
+# configuration du port série
 ser = serial.Serial(
 	port='/dev/ttyUSB0',
 	baudrate=9600,
@@ -30,9 +30,6 @@ ser = serial.Serial(
 	stopbits=serial.STOPBITS_ONE,
 	bytesize=serial.EIGHTBITS
 )
-
-#print(ser.open())
-#print (ser.isOpen())
 
 
 time.sleep(1)
